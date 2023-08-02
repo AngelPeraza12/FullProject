@@ -20,16 +20,16 @@
 // }
 
 class CreationError extends Error {
-    constructor(message: string, componentName: string){
+    constructor(message: string){
         super(message)
-        this.name = `${componentName}CreationError`
+        this.name = `CreationError`
     }
 }
 
 class UpdateError extends Error {
-    constructor(message: string, componentName: string){
+    constructor(message: string){
         super(message)
-        this.name = `${componentName}UpdateError`
+        this.name = `UpdateError`
     }
 }
 
@@ -41,16 +41,16 @@ class RecordNotFoundError extends Error {
 }
 
 class DeleteError extends Error {
-    constructor(message: string, componentName: string){
+    constructor(message: string){
         super(message)
-        this.name = `${componentName}DeleteError`
+        this.name = `DeleteError`
     }
 }
 
 class GetAllError extends Error {
-    constructor(message: string, componentName: string){
+    constructor(message: string){
         super(message)
-        this.name = `${componentName}GetAllError`
+        this.name = `GetAllError`
     }
 }
 
